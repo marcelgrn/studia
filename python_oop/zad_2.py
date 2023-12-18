@@ -36,9 +36,10 @@ class Employee:
     def __str__(self):
         return (
             f"Employee: {self.first_name} {self.last_name}\n"
-            f"Hire date: {self.hire_date}\nBirth date: {self.birth_date}\n"
-            f"Location: {self.city}, {self.street}, {self.zip_code}\n"
-            f"Phone: {self.phone}"
+            f"Hire date: {self.hire_date}\n"
+            f"Birth date: {self.birth_date}\n"
+            f"Location: {self.city}, {self.street}"
+            f"{self.zip_code}\nPhone: {self.phone}"
         )
 
 
@@ -70,8 +71,8 @@ class Order:
         book_list = "\n".join([f"  - {book}" for book in self.books])
         return (
             f"Order by {self.employee.first_name} {self.employee.last_name}\n"
-            f"Order date: {self.order_date}\nStudent: {self.student}\n"
-            f"Books:\n{book_list}"
+            f"Order date: {self.order_date}\n"
+            f"Student: {self.student}\nBooks:\n{book_list}"
         )
 
 

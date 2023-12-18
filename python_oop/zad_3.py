@@ -16,9 +16,9 @@ class Property:
     def __str__(self):
         return (
             f"Property: {self.address}\n"
-            f"Area: {self.area} sq. m\nRooms: {self.rooms}\n"
-            f"Price: ${self.price}"
-            )
+            f"Area: {self.area} sq. m\n"
+            f"Rooms: {self.rooms}\nPrice: ${self.price}"
+        )
 
 
 class House(Property):
@@ -29,8 +29,9 @@ class House(Property):
     def __str__(self):
         return (
             f"House: {self.address}\n"
-            f"Area: {self.area} sq. m\nRooms: {self.rooms}\n"
-            f"Price: ${self.price}\nPlot size: {self.plot} sq. m"
+            f"Area: {self.area} sq. m\n"
+            f"Rooms: {self.rooms}\nPrice: ${self.price}\n"
+            f"Plot size: {self.plot} sq. m"
         )
 
 
@@ -42,8 +43,9 @@ class Flat(Property):
     def __str__(self):
         return (
             f"Flat: {self.address}\n"
-            f"Area: {self.area} sq. m\nRooms: {self.rooms}\n"
-            f"Price: ${self.price}\nFloor: {self.floor}"
+            f"Area: {self.area} sq. m\n"
+            f"Rooms: {self.rooms}\nPrice: ${self.price}\n"
+            f"Floor: {self.floor}"
         )
 
 
